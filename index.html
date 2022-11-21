@@ -4,14 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/style/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="./assests/scripts/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <main>
-        <section class="board-container">
-            <div class="board">
-                
+        <header>
+            <h1> Can You Etch It?!</h1>
+        </header>
+        <section class="toolset">
+            <div class="toolset-wrapper toolset-wrapper--styling">
+                <div class="toolset__tools">
+                    <label for="board-size"> Grid Size: </label>
+                    <input type="number" value="16" max="100" name="board-size" id="board-size">
+                </div>
+                <div class="toolset__tools">
+                    <label for="color-picker">Pen Color: </label>
+                    <input type="color" value="#000000" name="color-picker" id="color-picker">
+                </div>
+                <div class="toolset__tools">
+                    <button>Darken</button>
+                </div>
+                <div class="toolset__tools">
+                    <button>Brigthen</button>
+                </div>
+                <div class="toolset__tools">
+                    <button>Eraser</button>
+                </div>
+                <div class="toolset__tools">
+                    <button>Random Colorizer</button>
+                </div>
+                <div class="toolset__tools">
+                    <button>Reset</button>
+                </div>
             </div>
+        </section>
+        <section class="board-container">
+            <!--<span id="top"></span>
+            <span id="left"></span>-->
+            <div class="board">
+            </div>
+            <!--<span id="right"></span>
+            <span id="bottom">
+                <button disabled="disabled">
+                    <div class="dial"></div>
+                </button>
+                <button disabled="disabled">
+                    <div class="dial"></div>
+                </button>
+            </span>-->
         </section>
     </main>
 </body>
