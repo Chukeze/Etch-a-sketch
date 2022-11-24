@@ -10,52 +10,20 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <header>
-            <h1> Can You Etch It?!</h1>
-        </header>
-        <section class="toolset">
-            <div class="toolset-wrapper toolset-wrapper--styling">
-                <div class="toolset__tools">
-                    <label for="board-size"> Grid Size: </label>
-                    <input type="number" value="16" max="100" name="board-size" id="board-size">
-                </div>
-                <div class="toolset__tools">
-                    <label for="color-picker">Pen Color: </label>
-                    <input type="color" value="#000000" name="color-picker" id="color-picker">
-                </div>
-                <div class="toolset__tools">
-                    <button>Darken</button>
-                </div>
-                <div class="toolset__tools">
-                    <button>Brigthen</button>
-                </div>
-                <div class="toolset__tools">
-                    <button>Eraser</button>
-                </div>
-                <div class="toolset__tools">
-                    <button>Random Colorizer</button>
-                </div>
-                <div class="toolset__tools">
-                    <button>Reset</button>
-                </div>
-            </div>
-        </section>
-        <section class="board-container">
-            <!--<span id="top"></span>
-            <span id="left"></span>-->
-            <div class="board">
-            </div>
-            <!--<span id="right"></span>
-            <span id="bottom">
-                <button disabled="disabled">
-                    <div class="dial"></div>
-                </button>
-                <button disabled="disabled">
-                    <div class="dial"></div>
-                </button>
-            </span>-->
-        </section>
-    </main>
-</body>
+    <header>
+     <h1> Can You Etch It?!</h1>
+    </header>
+    <section class="toolset">
+      <label for="board-size">Grid Size:</label>
+      <input type="number" value="16" max="100" name="board-size" id="board-size">
+      <label for="color-picker">Pen Color: </label>
+      <input type="color" value="#000000" name="color-picker" id="color-picker">
+      <button>Darken</button>
+      <button>Brighten</button>
+      <button>Eraser</button>
+      <button>Random Colorizer</button>
+      <button>Reset</button>
+    </section>
+    <main class="board"></main>
+  </body> 
 </html>
