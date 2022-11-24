@@ -29,6 +29,10 @@ document.querySelector('#color-picker').addEventListener('change', (e) => {
     penColor = e.target.value;
 }, {passive: true});
 
+document.querySelector('#reset').addEventListener('click', () => {
+    [...board.children].forEach(el => el.remove());
+    createGrid()
+})
 /*document.querySelector('#shade').addEventListener('click',(e)=>{
     if(!e.target.matches(".board > *")) return;
     [...board.children].forEach(el => el.id = 'shading');
