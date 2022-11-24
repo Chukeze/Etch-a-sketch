@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assests/style/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="./assests/scripts/script.js" defer></script>
-    <title>Document</title>
+    <title>Etch-A-Sketch</title>
 </head>
 <body>
     <header>
@@ -15,14 +15,14 @@
     </header>
     <section class="toolset">
       <label for="board-size">Grid Size:</label>
-      <input type="number" value="16" max="100" name="board-size" id="board-size">
+      <input type="number" value="" min="1" max="100"  name="board-size" id="board-size">
       <label for="color-picker">Pen Color: </label>
       <input type="color" value="#000000" name="color-picker" id="color-picker">
-      <button>Darken</button>
-      <button>Brighten</button>
-      <button>Eraser</button>
-      <button>Random Colorizer</button>
-      <button>Reset</button>
+      <button id="shade">Darken</button>
+      <button id="lighten">Brighten</button>
+      <button id="erase">Eraser</button>
+      <button id="random-color">Random Colorizer</button>
+      <button id="reset">Reset</button>
     </section>
     <main class="board"></main>
   </body> 
